@@ -44,7 +44,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .wrapper{
@@ -56,7 +56,7 @@ main{
 h1, h2{
     position:sticky;
     position: -webkit-sticky;
-    top:0px;
+    top:50px;
     background-color: white;
     text-align: center;
     padding: 5px;
@@ -155,10 +155,10 @@ footer{
 
     main{
         max-width: 980px;
-        height:420px;
         margin-top:0px;
         margin-left: 27%;
         margin-right: 10%;
+        margin-bottom: 165px;
         justify-content: flex-start;
     }
 
@@ -194,9 +194,8 @@ footer{
 
     h1,h2{
         top:150px;
-        height:75px;
+        height:50px;
         width:100%;
-        background-color: red;
     }
 
     nav{
