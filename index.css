@@ -6,9 +6,7 @@
 
 body{
     font-size: 16px;
-    /*font-family: 'Gentium Basic', serif;
-    font-family: 'Open Sans', sans-serif;*/
-    font-family: serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -16,7 +14,7 @@ header{
     top:0;
     height:50px;
     width:100%;
-    background-color: gray;
+    background-color: hsla(198,64%,21%,1);
     z-index: 100;
 }
 
@@ -25,19 +23,26 @@ ul{
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    width:75%;
     height:50px;
     margin: 0 auto;
-    background-color: lightgray;
 }
 
-li{
+li a{
+    display:block;
+    width:70px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
     text-decoration: none;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
-a{
-    text-decoration: none;
-    color:black;
+li a:hover{
+    background-color: hsl(159, 53%, 25%);
+    color:white;
+    text-shadow: 1px 1px 1px hsl(0,0%,60%);
 }
 
 main{
@@ -58,9 +63,13 @@ h1, h2{
     position:sticky;
     position: -webkit-sticky;
     top:50px;
-    background-color: white;
+    background-color: hsla(201,31%,47%,1);
     text-align: center;
     padding: 5px;
+    font-size:24px;
+    color:white;
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 1px;
 }
 
 section{
@@ -70,10 +79,10 @@ section{
     position: relative;
     width:75%;
     height:auto;
-    margin-top: 35px;
+    margin-top: 50px;
     padding: 15px; 
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid hsla(198,64%,21%,1);
+    background-color: hsla(0,50%,100%,1);
 }
 
 section:after{
@@ -87,7 +96,10 @@ section:after{
 }
 
 section > p{
-    margin-top: 15px;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 25px;
+    padding:10px;
 }
 
 figure{
@@ -105,6 +117,14 @@ figure{
 figcaption{
     padding:5px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.technologies{
+    display:block;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
 .project-links{
@@ -117,16 +137,18 @@ figcaption{
 .project-links a{
     width:135px;
     height: 35px;
-    background-color: lightgray;
+    background-color: hsla(142, 44%, 19%,1);
     margin: 5px;
     line-height: 35px;
     text-align: center;
     border-radius: 6px;
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
 }
 
 .project-links a:hover{
-    text-shadow: 1px 2px 3px #afafaf;
-    background-color: gray;
+    background-color: hsl(159, 53%, 25%);
     color:white;
 }
 
@@ -139,8 +161,10 @@ hr{
 }
 
 #bio{
+    display:block;
     margin-top:75px;
     padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer{
@@ -148,9 +172,12 @@ footer{
     bottom: 0;
     width:100%;
     height: 50px;
-    background-color: gray;
+    background-color: hsla(198,64%,21%,1);
     text-align: center;
     z-index: 100;
+    line-height: 50px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (min-width: 800px){
@@ -166,7 +193,6 @@ footer{
 
     #bio{
         margin-top:15px;
-        height:300px;
     }
 
     header{
@@ -189,11 +215,13 @@ footer{
         top:0;
         height:50px;
         width:100%;
+        font-size:32px;
+        font-family: 'Philosopher', sans-serif;
+        letter-spacing: 2px;
     }
 
     nav{
         height: 100%;
-        background-color: lightgray;
     }
 
     ul{
@@ -201,32 +229,42 @@ footer{
         justify-content: center;
         height: 100%;
         width: 100%;
+        background-color: hsla(198,64%,21%,1);
     }
 
-    li{
-        margin-top: 20px;
+    li a{
+        display:block;
+        max-width: 0;
+        min-width:200px;
         height:50px;
-        width:100%;
         text-align: center;
         line-height: 50px;
+        text-decoration: none;
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
     }
-
-    li:hover{
-        background-color: white;
-        text-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    
+    li a:hover{
+        background-color: hsl(159, 53%, 25%);
+        color:white;
+        text-shadow: 1px 1px 1px hsl(0,0%,60%);
     }
-
+    
     section{
         max-width:750px;
         border: none;
-        margin-top: 15px;
-        border:2px solid black;
+        border: 2px solid hsla(198,64%,21%,1);
+    }
+
+    .project-links a{
+        font-size: 16px;
     }
 
     footer{
         width: 200px;
         height: 50px;
-        background-color: gray;
+        background-color: hsla(198,64%,21%,1);
         text-align: center;
         line-height: 50px;
         padding: 5px;
