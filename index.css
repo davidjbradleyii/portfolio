@@ -20,16 +20,20 @@ header{
 
 ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     list-style: none;
     height:50px;
     margin: 0 auto;
 }
 
+li{
+    width:20%;
+}
+
 li a{
     display:block;
-    width:70px;
+    width:100%;
     height:50px;
     text-align: center;
     line-height: 50px;
@@ -118,7 +122,7 @@ figcaption{
     padding:5px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .technologies{
@@ -171,13 +175,14 @@ footer{
     position: fixed;
     bottom: 0;
     width:100%;
-    height: 50px;
+    height: auto;
     background-color: hsla(198,64%,21%,1);
     text-align: center;
     z-index: 100;
     line-height: 50px;
     color:white;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 @media only screen and (min-width: 800px){
@@ -228,6 +233,7 @@ footer{
     ul{
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
         height: 100%;
         width: 100%;
         background-color: hsla(198,64%,21%,1);
@@ -264,7 +270,6 @@ footer{
 
     footer{
         width: 200px;
-        height: 50px;
         background-color: hsla(198,64%,21%,1);
         text-align: center;
         line-height: 50px;
