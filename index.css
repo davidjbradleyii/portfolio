@@ -76,7 +76,7 @@ h1, h2{
     letter-spacing: 1px;
 }
 
-section{
+section.project, section#bio{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +89,7 @@ section{
     background-color: hsla(0,50%,100%,1);
 }
 
-section:after{
+section.project:after{
     content: " ";
     position: absolute;
     z-index: -1;
