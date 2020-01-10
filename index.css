@@ -120,7 +120,7 @@ figure{
 
 figcaption{
     padding:5px;
-    text-align: center;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 }
@@ -129,6 +129,10 @@ figcaption{
     display:block;
     margin-top:5px;
     margin-bottom: 5px;
+}
+
+.app-summary, .app-technologies{
+    font-weight: bold;
 }
 
 .project-links{
