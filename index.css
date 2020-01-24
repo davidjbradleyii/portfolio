@@ -133,6 +133,7 @@ figcaption{
 
 .app-summary, .app-technologies{
     font-weight: bold;
+    font-size: 14px;
 }
 
 .project-links{
