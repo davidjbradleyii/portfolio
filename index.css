@@ -189,6 +189,10 @@ footer{
     font-size: 14px;
 }
 
+#bio h1{
+    background-color: hsl(159, 53%, 25%);
+}
+
 @media only screen and (min-width: 500px){
     section.project, section#bio{
         /* width: 95%; */
