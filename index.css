@@ -24,17 +24,17 @@ ul{
     align-items: center;
     list-style: none;
     height:50px;
-    margin: 0 auto;
+/*     margin: 0 auto; */
 }
 
 li{
-    width:20%;
+    width: 20%;
 }
 
 li a{
-    display:block;
-    width:100%;
-    height:50px;
+    display: block;
+    width: 100%;
+    height: 50px;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
@@ -50,10 +50,6 @@ li a:hover{
 }
 
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding-bottom: 75px;
 }
 
@@ -70,7 +66,7 @@ h1, h2{
     background-color: hsla(201,31%,47%,1);
     text-align: center;
     padding: 5px;
-    font-size:24px;
+    font-size: 17px;
     color:white;
     font-family: 'Philosopher', sans-serif;
     letter-spacing: 1px;
@@ -81,16 +77,16 @@ section.project, section#bio{
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width:75%;
+    width: 95%;
     height:auto;
-    margin-top: 50px;
-    padding: 15px; 
+    margin-top: 25px;
+    padding: 10px; 
     border: 2px solid hsla(198,64%,21%,1);
     background-color: hsla(0,50%,100%,1);
 }
 
 section#bio{
-    margin-top: 75px;
+    margin-top: 65px;
 }
 
 section.project:after{
@@ -103,7 +99,7 @@ section.project:after{
     box-shadow: 0px -30px 10px 40px #afafaf;
 }
 
-section > p{
+section > p {
     margin-top: 2px;
     font-size: 14px;
     line-height: 25px;
@@ -137,7 +133,6 @@ figcaption{
 
 .app-summary, .app-technologies{
     font-weight: bold;
-    font-size: 14px;
 }
 
 .project-links{
@@ -157,7 +152,7 @@ figcaption{
     border-radius: 6px;
     text-decoration: none;
     color:white;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .project-links a:hover{
@@ -194,8 +189,27 @@ footer{
     font-size: 14px;
 }
 
+@media only screen and (min-width: 500px){
+    section.project, section#bio{
+        /* width: 95%; */
+        max-width: 500px;
+    }
+
+    h1, h2 {
+        font-size: 26px;
+    }
+
+    .project-links a, figcaption{
+        font-size: 14px;
+    }
+}
+
 @media only screen and (min-width: 800px){
     main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-left:200px;
         margin-bottom: 0;
         padding-bottom:30px;
@@ -215,26 +229,6 @@ footer{
         left: 0;
     }
 
-    header:after{
-        content: " ";
-        position: absolute;
-        top:0;
-        right:0;
-        height:100%;
-        z-index: -1;
-        transform:rotate(-180deg);
-        box-shadow: 10px 0px 15px 10px #000;
-    }
-
-    h1,h2{
-        top:0;
-        height:50px;
-        width:100%;
-        font-size:32px;
-        font-family: 'Philosopher', sans-serif;
-        letter-spacing: 2px;
-    }
-
     nav{
         height: 100%;
     }
@@ -249,10 +243,10 @@ footer{
     }
 
     li a{
-        display:block;
+        display: block;
         max-width: 0;
-        min-width:200px;
-        height:50px;
+        min-width: 200px;
+        height: 50px;
         text-align: center;
         line-height: 50px;
         text-decoration: none;
@@ -266,19 +260,9 @@ footer{
         color:white;
         text-shadow: 1px 1px 1px hsl(0,0%,60%);
     }
-    
-    section{
-        max-width:750px;
-        border: none;
-        border: 2px solid hsla(198,64%,21%,1);
-    }
-
-    .project-links a{
-        font-size: 16px;
-    }
 
     footer{
-        width: 200px;
+        width: 199px;
         background-color: hsla(198,64%,21%,1);
         text-align: center;
         line-height: 50px;
