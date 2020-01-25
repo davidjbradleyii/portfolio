@@ -64,9 +64,9 @@ main{
 }
 
 h1, h2{
-    position:sticky;
+/*  position:sticky;
     position: -webkit-sticky;
-    top:50px;
+    top:50px; */
     background-color: hsla(201,31%,47%,1);
     text-align: center;
     padding: 5px;
@@ -87,6 +87,10 @@ section.project, section#bio{
     padding: 15px; 
     border: 2px solid hsla(198,64%,21%,1);
     background-color: hsla(0,50%,100%,1);
+}
+
+section#bio{
+    margin-top: 75px;
 }
 
 section.project:after{
