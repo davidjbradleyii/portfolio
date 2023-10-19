@@ -1,72 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Philosopher%7COpen+Sans&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher%7COpen+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link href="index.css" type="text/css" rel="stylesheet" />
     <title>David Bradley: Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://github.com/djbradleyii" target="_blank">Github</a></li>
-                <li><a href="http://www.linkedin.com/in/djbradleyii" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:d.jbradley.ii@gmail.com" target="_blank">Email</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="https://github.com/djbradleyii" target="_blank">Github</a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/djbradleyii" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="mailto:d.jbradley.ii@gmail.com" target="_blank">Email</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="wrapper">
-        <section  id="bio">
-            <h1 id="bio-header"><code>alert("Hello, World!");</code></h1>
-            <p>My name is David. After earning a bachelor's in Business Administration and working professionally for a few years, I decided to follow my passion of becoming a Full Stack Developer. Writing my first alert program and a chance encounter with a video game programmer ignited my intrigue in programming.</p>
+      <div class="wrapper">
+        <article id="bio">
+          <h1 id="bio-header"><code>alert("Hello, World!");</code></h1>
+          <p>
+            My name is David. After earning a bachelor's in Business
+            Administration and working professionally for a few years, I decided
+            to follow my passion of becoming a Full Stack Developer. Writing my
+            first alert program and a chance encounter with a video game
+            programmer ignited my intrigue in programming.
+          </p>
 
-            <p>My love for efficiency, passion for learning, and thrill of problem-solving have transformed my intrigue into my intent and commitment. My goal is to become a programmer who offers unique solutions to complex problems.</p> 
-                
-            <p>I spend my non-coding hours in search of delicious food, practicing different languages (currently Spanish and Japanese), and playing Rocket League.</p>
+          <p>
+            My love for efficiency, passion for learning, and thrill of
+            problem-solving have transformed my intrigue into my intent and
+            commitment. My goal is to become a programmer who offers unique
+            solutions to complex problems.
+          </p>
+
+          <p>
+            I spend my non-coding hours in search of delicious food, practicing
+            different languages (currently Spanish and Japanese), and playing
+            Rocket League.
+          </p>
+        </article>
+        <hr />
+        <section>
+          <h2 class="group-header">Volunteer Work</h2>
+          <article class="project">
+            <h3>Organization: <br />Code for America - Hack for LA</h3>
+            <h3>Project: Food Oasis</h3>
+            <figure>
+              <img
+                src="screenshots/food_oasis_map_800.png"
+                alt="Code for America - Hack for LA - Food Oasis project"
+                class="m-img d-img"
+              />
+              <figcaption>
+                <span class="app-summary">Summary: </span>Food Oasis is a
+                web-based directory that connects people to free food resources
+                in Los Angeles.
+                <span class="technologies"
+                  ><span class="app-technologies">Technologies: </span>HTML5,
+                  CSS, JavaScript, Node.js, React.js, TypeScript, SCSS,
+                  Express.js, PostgreSQL, AWS, Material-UI
+                </span>
+              </figcaption>
+            </figure>
+            <div class="project-links">
+              <a href="https://foodoasis.la/" target="_blank">Live Site</a>
+            </div>
+          </article>
         </section>
         <hr />
-        <section  class="project"  id="projects">
+        <section id="projects">
+          <h2 class="group-header">Projects</h2>
+          <article class="project">
             <h2>Friends Quiz App</h2>
             <figure>
-                <img src="screenshots/quiz-app/question.png" alt="Friends Quiz App" class="m-img d-img"/>
-                <figcaption><span class="app-summary">Summary: </span>The Friends Quiz App is a great way to test your knowledge of the popular TV series. <span class="technologies"><span class="app-technologies">Technologies: </span>HTML5, CSS, JavaScript & jQuery</span>
-                </figcaption>
+              <img
+                src="screenshots/quiz-app/question.png"
+                alt="Friends Quiz App"
+                class="m-img d-img"
+              />
+              <figcaption>
+                <span class="app-summary">Summary: </span>The Friends Quiz App
+                is a great way to test your knowledge of the popular TV series.
+                <span class="technologies"
+                  ><span class="app-technologies">Technologies: </span>HTML5,
+                  CSS, JavaScript & jQuery</span
+                >
+              </figcaption>
             </figure>
             <div class="project-links">
-                <a href="https://github.com/djbradleyii/quiz-app" target="_blank">Github</a><a href="https://djbradleyii.github.io/quiz-app/" target="_blank">Demo</a>
+              <a href="https://github.com/djbradleyii/quiz-app" target="_blank"
+                >Github</a
+              ><a href="https://djbradleyii.github.io/quiz-app/" target="_blank"
+                >Demo</a
+              >
             </div>
-        </section>
-        <section  class="project">
+          </article>
+          <article class="project">
             <h2>Random Activity Generator App</h2>
             <figure>
-                <img src="screenshots/random-activity-app/random-activity-gen-app-800.png" alt="Random Activity Generator App" class="m-img d-img"/>
-                <figcaption><span class="app-summary">Summary: </span>This application will help remove the guess work out of determining what to do with your day. With accompanying videos from YouTube, you can get inspiration on each activity generated.<span class="technologies"><span class="app-technologies">Technologies: </span>HTML5, CSS, JavaScript, jQuery and RESTful API.</span>
-                </figcaption>
+              <img
+                src="screenshots/random-activity-app/random-activity-gen-app-800.png"
+                alt="Random Activity Generator App"
+                class="m-img d-img"
+              />
+              <figcaption>
+                <span class="app-summary">Summary: </span>This application will
+                help remove the guess work out of determining what to do with
+                your day. With accompanying videos from YouTube, you can get
+                inspiration on each activity generated.<span
+                  class="technologies"
+                  ><span class="app-technologies">Technologies: </span>HTML5,
+                  CSS, JavaScript, jQuery and RESTful API.</span
+                >
+              </figcaption>
             </figure>
             <div class="project-links">
-                <a href="https://github.com/djbradleyii/random-activity-generator-app" target="_blank">Github</a><a href="https://djbradleyii.github.io/random-activity-generator-app/" target="_blank">Demo</a>
+              <a
+                href="https://github.com/djbradleyii/random-activity-generator-app"
+                target="_blank"
+                >Github</a
+              ><a
+                href="https://djbradleyii.github.io/random-activity-generator-app/"
+                target="_blank"
+                >Demo</a
+              >
             </div>
-        </section>
-		<section  class="project">
+          </article>
+          <article class="project">
             <h2>Social Dining App</h2>
             <figure>
-                <img src="screenshots/social-dining-app/dashboard.png" alt="Social Dining App" class="m-img d-img"/>
-                <figcaption><span class="app-summary">Summary: </span>If you have a fear of networking or seek to expand your social circle, this app is for you. Connect with different people over dinner, drinks, or maybe even some karaoke. Create social dining events, such as Singles night, Game night, Networking or Social with your own creative brand of social dining experience. The goal is to have fun, eat delicious food and mingle with others.<span class="technologies"><span class="app-technologies">Technologies: </span>HTML5, CSS, JavaScript, Node.js, React.js, Express.js, RESTful API &amp; PostgreSQL</span>
-                </figcaption>
+              <img
+                src="screenshots/social-dining-app/dashboard.png"
+                alt="Social Dining App"
+                class="m-img d-img"
+              />
+              <figcaption>
+                <span class="app-summary">Summary: </span>If you have a fear of
+                networking or seek to expand your social circle, this app is for
+                you. Connect with different people over dinner, drinks, or maybe
+                even some karaoke. Create social dining events, such as Singles
+                night, Game night, Networking or Social with your own creative
+                brand of social dining experience. The goal is to have fun, eat
+                delicious food and mingle with others.<span class="technologies"
+                  ><span class="app-technologies">Technologies: </span>HTML5,
+                  CSS, JavaScript, Node.js, React.js, Express.js, Knex.js, SQL,
+                  RESTful API &amp; PostgreSQL</span
+                >
+              </figcaption>
             </figure>
             <div class="project-links">
-                <a href="https://github.com/djbradleyii/social-dining-app-client" target="_blank">Github: Client</a>
-				<a href="https://github.com/djbradleyii/social-dining-app-api" target="_blank">Github: API</a>
-				<a href="https://social-dining-app.now.sh" target="_blank">Demo</a>
+              <a
+                href="https://github.com/djbradleyii/social-dining-app-client"
+                target="_blank"
+                >Github: Client</a
+              >
+              <a
+                href="https://github.com/djbradleyii/social-dining-app-api"
+                target="_blank"
+                >Github: API</a
+              >
+              <a
+                href="https://social-dining-app-client.onrender.com"
+                target="_blank"
+                >Demo</a
+              >
             </div>
-        </section>
-        <section  class="project">
+          </article>
+          <!--         <article  class="project">
             <h2>Rocket League Community App</h2>
             <figure>
                 <img src="screenshots/rocket-league-app/dashboard-800.png" alt="Rocket League Community App" class="m-img d-img"/>
@@ -79,11 +196,12 @@
 				<a href="https://github.com/djbradleyii/rl-community-app-server" target="_blank">Github: API</a>
 				<a href="https://rocket-league-community-app.now.sh/" target="_blank">Demo</a>
             </div>
+        </article> -->
         </section>
-        </div>
+      </div>
     </main>
     <footer>
-        <p>&copy; David Bradley II</p>
+      <p>&copy; David Bradley II</p>
     </footer>
-</body>
+  </body>
 </html>
