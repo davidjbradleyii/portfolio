@@ -213,6 +213,12 @@ footer {
   background-color: hsl(159, 53%, 25%);
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: hsla(142, 44%, 19%, 0.75);
+}
+
 @media only screen and (min-width: 500px) {
   article.project,
   article#bio,
